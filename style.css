@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial;
+}
+.container {
+    margin: 0 auto;
+    width: 1280px;
+    border: 1px solid #f5f5f5;
+}
+/* Шапка */
+header {
+    background-color: #445162;
+    color: white;
+    padding: 50px;
+    overflow: hidden;
+}
+header .header-prod{
+    float: left;
+}
+@media screen and (max-width:600px){
+    header .header-prod,
+    main .aboutYP,
+    main .plusesP ul li,
+    main .reviews .review,
+    footer form {
+        float: none !important;
+    }
+    header .logo,
+    main .imgYP,
+    main .buy article,
+    main .scrinshots article{
+        float: none !important;
+        margin-top: 30px;
+        display: block !important;
+    }
+    .container,
+    main .aboutYP,
+    main .plusesP ul li,
+    main .scrinshots article,
+    main .buy article,
+    footer form,
+    main .reviews .review {
+        width: 100% !important;
+        margin-bottom: 20px;
+        
+    }
+    footer input{
+        width: 100% !important;
+    }
+    footer .contacts{
+        padding: 20px 50px !important;
+    }
+    main .reviews .review .imgrev{
+        display: block;
+        float: none !important;
+        margin: 10px 45%;
+        
+    }
+    main .reviews .review p{
+        width: 80% !important;
+    }
+    
+}
+
+
+/*
+
+main .reviews .review{
+    width: 574px;
+    float: left;
+    margin-top: 24px;
+    overflow: hidden;
+}
+main .reviews .review .imgrev{
+    border-radius: 50%;
+    background-color:  #445161;
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-right: 16px;
+}
+main .reviews .review p{
+    font-family: Arial;
+    color:  #333333;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+    text-align: left;
+    padding: 16px 20px 15px 27px;
+    background-color: #ececec;
+    width: 413px;
+    float: right;
+    border-radius: 8px;  
+    margin-right: 16px;
+}
+main .reviews .review p span{
+    font-family: Arial;
+    color:  #989898;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}*/
+
+h1{
+    font-family: Arial;
+    font-size: 60px;
+    font-weight: 400;
+}
+header ul{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 24px;
+}
+
+header .logo{
+    background-color:  #ffffff;
+    width: 469px;
+    height: 214px;
+    float: right;
+}
+
+/* main */
+main .YP{
+    overflow: hidden;
+    padding: 50px;
+}
+
+main .aboutYP{
+    width: 600px;
+    float: left;
+}
+main .aboutYP h2{
+    font-family: Arial;
+    color:  #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+}
+main .aboutYP p{
+    font-family: Arial;
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 20px;
+}
+
+main .imgYP{
+    width: 430px;
+    height: 245px;
+    float: right;
+    background-color: #445162;
+}
+main .plusesP,
+main .reviews{
+    overflow: hidden;
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+main .plusesP h2,
+main .scrinshots h2,
+main .reviews h2,
+main .buy h2{
+    font-family: Arial;
+    color:  #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+}
+main .plusesP ul{
+    font-family: Arial;
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 20px;
+    text-align: left;
+}
+main .plusesP ul li{
+    float: left;
+    width: 45%;
+    padding-right: 15px;
+    padding-bottom: 25px;
+}
+/* scrinshots */
+
+main .scrinshots{
+    overflow: hidden;
+    padding: 50px;
+}
+
+main .scrinshots article{
+    float: left;
+    width: 564px;
+    margin-top: 30px;
+}
+main .scrinshots article .imgScrin{
+    width: 200px;
+    height: 150px;
+    float: left;
+    background-color: #445161;
+    margin-right: 15px;
+}
+main .scrinshots article h3{
+    font-family: Arial;
+    color:  #445161;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+main .scrinshots article p{
+    font-family: Arial;
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+main .reviews .review{
+    width: 574px;
+    float: left;
+    margin-top: 24px;
+    overflow: hidden;
+}
+main .reviews .review .imgrev{
+    border-radius: 50%;
+    background-color:  #445161;
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-right: 16px;
+}
+main .reviews .review p{
+    font-family: Arial;
+    color:  #333333;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+    text-align: left;
+    padding: 16px 20px 15px 27px;
+    background-color: #ececec;
+    width: 413px;
+    float: right;
+    overflow: hidden;
+    border-radius: 8px;  
+    margin-right: 16px;
+}
+main .reviews .review p span{
+    font-family: Arial;
+    color:  #989898;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}
+main .buy{
+    overflow: hidden;
+    padding: 20px 145px;
+    text-align: center;
+}
+main .buy article {
+    display: inline-block;
+    width: 300px;
+    background-color: #445162;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+main .buy article ol li{
+    list-style-position: inside;
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 10px;
+}
+main .buy article h3{
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+main .buy article p{
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    font-family: Arial;
+    color:  #445162;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 70px;
+     border: 1px solid #445162;
+}
+main .buy article ol{
+    padding: 20px;
+}
+main .buy article input[type="submit"]{
+    border-radius: 5px;
+    background-color:  #ffffff;
+    width: 80%;
+    height: 40px;
+    
+    margin-bottom: 20px;
+    font-family: Arial;
+    color:  #445161;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+}
+/*footer*/
+footer{
+    overflow: hidden;
+}
+footer .contacts h2{
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+footer .contacts{
+    padding: 50px 230px;
+    background-color: #445161;
+    overflow: hidden;
+}
+footer form{
+    width: 500px;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+}
+footer .link{
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+    float: left;
+    padding-left: 50px;
+}
+footer input{
+    width: 490px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-family: Arial;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+footer textarea{
+    width: 480px;
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: Arial;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    resize: none;
+}
+footer input[type="submit"]{
+    width: 140px;
+    text-align: center;
+    padding: 0;
+    font-family: Arial;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+footer .copy{
+    font-family: Arial;
+    color:  #445162;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
