@@ -21,91 +21,6 @@ header {
 header .header-prod{
     float: left;
 }
-@media screen and (max-width:600px){
-    header .header-prod,
-    main .aboutYP,
-    main .plusesP ul li,
-    main .reviews .review,
-    footer form {
-        float: none !important;
-    }
-    header .logo,
-    main .imgYP,
-    main .buy article,
-    main .scrinshots article{
-        float: none !important;
-        margin-top: 30px;
-        display: block !important;
-    }
-    .container,
-    main .aboutYP,
-    main .plusesP ul li,
-    main .scrinshots article,
-    main .buy article,
-    footer form,
-    main .reviews .review {
-        width: 100% !important;
-        margin-bottom: 20px;
-        
-    }
-    footer input{
-        width: 100% !important;
-    }
-    footer .contacts{
-        padding: 20px 50px !important;
-    }
-    main .reviews .review .imgrev{
-        display: block;
-        float: none !important;
-        margin: 10px 45%;
-        
-    }
-    main .reviews .review p{
-        width: 80% !important;
-    }
-    
-}
-
-
-/*
-
-main .reviews .review{
-    width: 574px;
-    float: left;
-    margin-top: 24px;
-    overflow: hidden;
-}
-main .reviews .review .imgrev{
-    border-radius: 50%;
-    background-color:  #445161;
-    width: 75px;
-    height: 75px;
-    float: left;
-    margin-right: 16px;
-}
-main .reviews .review p{
-    font-family: Arial;
-    color:  #333333;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 18px;
-    text-align: left;
-    padding: 16px 20px 15px 27px;
-    background-color: #ececec;
-    width: 413px;
-    float: right;
-    border-radius: 8px;  
-    margin-right: 16px;
-}
-main .reviews .review p span{
-    font-family: Arial;
-    color:  #989898;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-}*/
-
 h1{
     font-family: Arial;
     font-size: 60px;
@@ -270,14 +185,14 @@ main .buy{
     padding: 20px 145px;
     text-align: center;
 }
-main .buy article {
+main .buy section {
     display: inline-block;
     width: 300px;
     background-color: #445162;
     margin-right: 25px;
     border-radius: 10px;
 }
-main .buy article ol li{
+main .buy section ol li{
     list-style-position: inside;
     font-family: Arial;
     color:  #ffffff;
@@ -287,7 +202,7 @@ main .buy article ol li{
     text-align: left;
     padding-left: 10px;
 }
-main .buy article h3{
+main .buy section h3{
     font-family: Arial;
     color:  #ffffff;
     font-size: 24px;
@@ -296,7 +211,7 @@ main .buy article h3{
     padding-top: 17px;
     padding-bottom: 17px;
 }
-main .buy article p{
+main .buy section p{
     overflow: hidden;
     background-color: white;
     text-align: center;
@@ -307,10 +222,10 @@ main .buy article p{
     line-height: 70px;
      border: 1px solid #445162;
 }
-main .buy article ol{
+main .buy section ol{
     padding: 20px;
 }
-main .buy article input[type="submit"]{
+main .buy section input[type="submit"]{
     border-radius: 5px;
     background-color:  #ffffff;
     width: 80%;
@@ -400,4 +315,49 @@ footer .copy{
     line-height: 24px;
     text-align: center;
     background-color: #f5f5f5;
+}
+
+@media screen and (max-width:600px){
+    header .header-prod,
+    main .aboutYP,
+    main .plusesP ul li,
+    main .reviews .review,
+    footer form {
+        float: none !important;
+    }
+    header .logo,
+    main .imgYP,
+    main .buy section,
+    main .scrinshots article{
+        float: none !important;
+        margin-top: 30px;
+        display: block !important;
+    }
+    .container,
+    main .aboutYP,
+    main .plusesP ul li,
+    main .scrinshots article,
+    main .buy section,
+    footer form,
+    main .reviews .review {
+        width: 100% !important;
+        margin-bottom: 20px;
+        
+    }
+    footer input{
+        width: 100% !important;
+    }
+    footer .contacts{
+        padding: 20px 50px !important;
+    }
+    main .reviews .review .imgrev{
+        display: block;
+        float: none !important;
+        margin: 10px 45%;
+        
+    }
+    main .reviews .review p{
+        width: 80% !important;
+    }
+    
 }
