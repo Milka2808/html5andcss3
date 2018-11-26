@@ -8,18 +8,29 @@ body{
 }
 .container {
     margin: 0 auto;
-    width: 1280px;
+    width: ;
     border: 1px solid #f5f5f5;
 }
+.header_wrap,
+.main_wrap,
+.footer_wrap{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 /* Шапка */
 header {
     background-color: #445162;
     color: white;
     padding: 50px;
     overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
 }
 header .header-prod{
     float: left;
+    width: 40%
+    
 }
 h1{
     font-family: Arial;
@@ -42,8 +53,7 @@ header ul li{
 }
 
 header .logo{
-    width: 469px;
-    overflow: hidden;
+    width: 40%;
     float: right;
 }
 header .logo video{
@@ -80,8 +90,14 @@ main .imgYP{
     width: 430px;
     height: 245px;
     float: right;
-    background-color: #445162;
+    background: url(http://www.costa.atlantisline.ru/Image.ashx?id=DictionaryItemImages/36003964-82aa-4524-b220-51aab9194d76.jpg&height=245&width=430&crop=1), rgba(0, 0, 0, 0.41) ;
+    background-blend-mode: luminosity;
+    background-size: cover;
+    }
+main .imgYP:hover {
+    background-blend-mode: inherit;
 }
+
 main .plusesP,
 main .reviews{
     overflow: hidden;
@@ -137,6 +153,12 @@ main .scrinshots article .imgScrin{
     float: left;
     background-color: #445161;
     margin-right: 15px;
+    background: url(http://www.costa.atlantisline.ru/Image.ashx?id=DictionaryItemImages/9292aaca-5b79-49a0-b79b-aabdb51e7c97.jpg&height=245&width=430&crop=1), rgba(0, 0, 0, 0.41) ;
+    background-blend-mode: luminosity;
+    background-size: cover;
+    }
+main .imgScrin:hover {
+    background-blend-mode: inherit;
 }
 main .scrinshots article h3{
     font-family: Arial;
@@ -154,22 +176,29 @@ main .scrinshots article p{
     line-height: 24px;
     text-align: left;
 }
-
+main .reviews{
+    padding-right: 0;
+}
 main .reviews .review{
-    width: 574px;
+    width: 49%;
     float: left;
     margin-top: 24px;
     overflow: hidden;
     position: relative;
-    
 }
+main .reviews .review:nth-child(even){
+    margin-right: 1%;
+}
+
 main .reviews .review .imgrev{
     border-radius: 50%;
-    background-color:  #445161;
     width: 75px;
     height: 75px;
     float: left;
     margin-right: 16px;
+    background: url(http://smartcity.icde.ru/images/96/smart/logo_smart256.png) no-repeat ;
+    background-size: cover;
+    border: 2px solid #445161;
 }
 main .reviews .review .text{
     font-family: Arial;
@@ -180,7 +209,7 @@ main .reviews .review .text{
     text-align: left;
     padding: 16px 20px 15px 27px;
     background-color: #ececec;
-    width: 413px;
+    width: 70%;
     overflow: hidden;
     border-radius: 8px;  
     
@@ -192,7 +221,7 @@ main .reviews .review .text::after{
     height: 20px;
     background-color: #ececec;
     position: absolute;
-    left: 82px;
+    left: 85px;
     top: 25px;
     transform: rotate(45deg);
 }
@@ -210,12 +239,12 @@ main .reviews .review .text span{
 
 main .buy{
     overflow: hidden;
-    padding: 20px 145px;
+    padding: 20px 10%;
     text-align: center;
 }
 main .buy section {
     display: inline-block;
-    width: 300px;
+    width: 28%;
     background-color: #445162;
     margin-right: 25px;
     border-radius: 10px;
@@ -280,7 +309,7 @@ footer .contacts h2{
     margin-bottom: 30px;
 }
 footer .contacts{
-    padding: 50px 230px;
+    padding: 50px 15%;
     background-color: #445161;
     overflow: hidden;
 }
@@ -289,6 +318,7 @@ footer form{
     overflow: hidden;
     float: left;
     text-align: center;
+    margin-right: 30px;
 }
 footer .link{
     font-family: Arial;
@@ -297,8 +327,6 @@ footer .link{
     font-weight: 400;
     line-height: 44px;
     text-align: left;
-    float: left;
-    padding-left: 50px;
 }
 
 footer .link p img{
@@ -361,8 +389,22 @@ footer .copy{
     text-align: center;
     background-color: #f5f5f5;
 }
+footer .social .fab{
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    color: #445162;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+footer .social{
+    margin-top: 30px;
+}
 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     header .header-prod,
     main .aboutYP,
     main .plusesP ul li,
@@ -389,7 +431,10 @@ footer .copy{
         margin-bottom: 20px;
         
     }
-    footer input{
+    footer input,
+    header video,
+    header .logo,
+    header .header-prod {
         width: 100% !important;
     }
     footer .contacts{
