@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    min-height: 100%;
+}
+body{
+    font-family: 'Raleway', 'Montserrat', 'Roboto', sans-serif;
+}
+
+.container,
+.slider{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+header,
+main,
+footer{
+    max-width: 1170px;
+}
+.slider{
+    background: url(img/Image004.jpg) rgb(17, 17, 17, 0.7);
+    background-blend-mode: multiply;
+    height: 1024px;
+}
+/* Шапка */
+header{
+    margin: 0 auto;
+    padding: 40px 0;
+    overflow: hidden;
+    box-sizing: content-box;
+    
+}
+.logo{
+    float: left;
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: right;
+    vertical-align: middle;
+}
+.logo span{
+    margin: 20px 0;
+}
+.menu {
+    list-style-type: none;
+    float: right;
+    width: 70%;
+}
+.menu li{
+    float: left;
+    margin: 10px 30px 0 0;
+    padding-top: 20px;
+}
+.menu li a{
+    text-decoration: none;
+    font-family: Montserrat;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+}
+.menu li a:hover{
+    color:  #c7b29a;
+}
+/*слайдер*/
+.slider{
+    text-align: center;
+}
+.text-block{
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: 270px;
+}
+.text-block h3{
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.text-block h2{
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.text-block p{
+    font-family: Montserrat;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 45px;
+}
+.text-block input{
+    border-radius: 3px;
+    background-color:  #998675;
+    border:1px solid #998675 ;
+    width: 170px;
+    height: 53px;
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23px;
+}
