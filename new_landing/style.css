@@ -21,6 +21,7 @@ body{
     background: url(img/Image004.jpg) rgb(17, 17, 17, 0.7);
     background-blend-mode: multiply;
     height: 1024px;
+    width: 100%;
     background-size: cover;
     
 }
@@ -458,6 +459,7 @@ footer .copyright a{
     font-weight: 300;
     line-height: 20px;
     text-decoration: none;
+    overflow: hidden;
 }
 
 footer .copyright a:hover{
@@ -525,7 +527,37 @@ footer .copyright ul span{
     .text-block{
         margin-top: 100px;
     }
+     main .mobile-dev .mobile-text{
+        margin: 5px;
+    }
+    main .mobile-dev .mobile-text ul{
+        margin-left: 0;
+    }
 }
-
+@media only screen and (max-width: 500px){
+    main .mobile-dev .mobile-text ul{
+        margin-left: 0;
+    }
+    .leftlink li,
+    .rightlink li,
+    .rightlink,
+    .leftlink{
+        float: none !important;
+        display: block !important;
+        margin-left: 5px !important;
+        border: none !important;
+    }
+    header .menu{
+        margin-left: 15%
+        
+    }
+    main .waxom{
+        margin: 0 auto;
+    }
+    main .wraptext{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
 
 
